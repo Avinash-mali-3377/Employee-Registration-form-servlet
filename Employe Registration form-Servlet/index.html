@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            overflow: auto;
+        }
+        .container {
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 600px;
+            max-height: 90vh;
+            overflow-y: auto;
+        }
+        label {
+            font-weight: bold;
+            display: block;
+            margin-top: 10px;
+        }
+        input {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        button {
+            margin-top: 15px;
+            width: 100%;
+            padding: 10px;
+            background: #28a745;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        button:hover {
+            background: #218838;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Employee Form</h2>
+        <form action="emp_info" method="post">
+            <label>First Name</label>
+            <input type="text" placeholder="Enter your first name" name="fname">
+            
+            <label>Last Name</label>
+            <input type="text" placeholder="Enter your last name" name="lname">
+            
+            <label>Salary</label>
+            <input type="number" placeholder="Enter salary" name="salary">
+            
+            <label>Role</label>
+            <input type="text" placeholder="Enter role" name="role">
+            
+            <label>Join Date</label>
+            <input type="date" name="join_date">
+            
+            <label>Experience</label>
+            <input type="text" placeholder="Enter experience" name="experience">
+            
+            <label>City</label>
+            <input type="text" placeholder="Enter city" name="city">
+            
+            <label>Country</label>
+            <input type="text" placeholder="Enter country" name="country">
+            
+            <label>Email</label>
+            <input type="email" placeholder="Enter email" name="email">
+            
+            <label>Mobile Number</label>
+            <input type="text" placeholder="Enter mobile number" name="mobno">
+            
+            <label>Age</label>
+            <input type="number" placeholder="Enter age" name="age">
+            
+            <label>Marital Status</label>
+            <input type="text" placeholder="Enter marital status" name="marital_status">
+            
+            <label>Date of Birth</label>
+            <input type="date" name="dob">
+            
+            <label>Password</label>
+            <input type="password" placeholder="Enter password" name="password">
+            
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
